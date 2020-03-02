@@ -1,5 +1,127 @@
-.todo__sideBar {
+.sideBar {
     background-color: #f4f6f8;
     width: 200px;
     border-right: 1px solid #f1f1f1;
+    padding: 12px 10px;
+}
+
+.list > li {
+    display: flex;
+    align-items: baseline;
+    padding: 10px;
+    width: 100%;
+}
+
+.list > li:hover,
+.list > li:hover > button {
+    background-color: white;
+}
+
+.list > li:first-child,
+.list > li:last-child {
+    margin-bottom: 30px;
+}
+
+.list > li > div {
+    width: 6.25%;
+    height: 10px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    margin-right: 6.25%;
+}
+
+.list > li > span {
+    width: 75%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+} 
+
+.list > li > button {
+    border: none;
+    color: inherit;
+    font: inherit;
+    width: 6.25%;
+    height: 10px;
+    /* background-color: rgb(219, 82, 82); */
+    margin-left: 6.25%;
+    color: rgb(184, 184, 184);
+    font-size: 13px;
+}
+
+.list > li > button:hover {
+    cursor: pointer;
+    /* background-color: red; */
+    color: red;
+}
+
+.sideBar > div {
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    color: #999;
+    background-color: #f4f6f8;
+}
+
+.sideBar > div:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+.form {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    border: solid 1px gray;
+}
+
+.form > div {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: -10px;
+    right: -8px;
+    transform: rotate(135deg);
+    border: 1px solid gray;
+    border-radius: 50%;
+    color: red
+}
+
+.form > div:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+
+.form > input {
+    padding: 3px 5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form > ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+}
+
+.form > ul > li {
+    width: 14px;
+    height: 14px;
+    border: solid 2px #f4f6f8;
+    border-radius: 50%;
+}
+
+.form > ul > li:hover {
+   border: 2px solid transparent;
+}
+
+.form > button {
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: rgb(44, 206, 98);
+    width: 100%;
+    padding: 3px 0;
+    border-radius: 4px;
 }
